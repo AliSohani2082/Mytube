@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SideBar = () => {
+const SideBar = ({ type }) => {
   return (
-    <div>SideBar</div>
+    <div className='bg-blue-500 h-full'>SideBar</div>
   )
 }
 

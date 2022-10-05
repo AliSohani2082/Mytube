@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 const Header = () => {
   const pallet = useSelector(state => state.theme.pallet)
   return (
-    <div className={`bg-[${pallet.primary}] absolute flex flex-nowrap justify-between items-center w-full h-[7] border-b-[1px] text-white border-white text-sm p-1`}>
+    <div className={`bg-[${pallet.primary}] absolute flex flex-nowrap opacity-10 justify-between items-center w-full h-[7] border-b-[1px] text-white border-white text-sm p-1`}>
       <div className='flex justify-center items-center'>
         <IconButton aria-label='menu-btn' size='large' sx={{color: pallet.mainText}} >
           <MenuIcon fontSize='inherit'/>
@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <Search />
       <div>
-        
+
       </div>
       
     </div>
